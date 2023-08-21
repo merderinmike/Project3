@@ -1,0 +1,15 @@
+@import './resets';
+$purple: #9356DC;
+$pink: #FF79DA;
+$green: #99E2D0;
+$primaryColor: $purple;
+$secondaryColor: $pink;
+$tertiaryColor: $green;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 500px) {
+    
+}
