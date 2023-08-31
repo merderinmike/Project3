@@ -1,0 +1,21 @@
+.entree-item {
+    display: flex;
+    gap: 20px;
+
+    &:hover {
+    }
+    
+    .add-item {
+        animation: button-drawer-animation 500ms ease-in;
+    }
+
+    @keyframes button-drawer-animation {
+        0% {
+
+        }
+
+        100% {
+
+        }
+    }
+}

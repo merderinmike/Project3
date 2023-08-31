@@ -1,1 +1,9 @@
-/*# sourceMappingURL=fullPalette.css.map */
+.entree-item {
+  display: flex;
+  gap: 20px; }
+  .entree-item .add-item {
+    animation: button-drawer-animation 500ms ease-in; }
+
+@keyframes button-drawer-animation {
+  0% { }
+  100% { } }

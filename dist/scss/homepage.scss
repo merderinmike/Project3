@@ -1,15 +1,162 @@
-@import './resets';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');
+@import './_resets';
+@import './orderButton';
 $purple: #9356DC;
 $pink: #FF79DA;
 $green: #99E2D0;
+$lightgrey: #f6f6f6;
+$darkgrey: #eaeaea;
+$iconColor: #7e7e7e;
 $primaryColor: $purple;
 $secondaryColor: $pink;
 $tertiaryColor: $green;
+$titleFF: Shrikhand;
+$textFF: Roboto;
 
 html, body {
     margin: 0;
     padding: 0;
 }
 @media screen and (max-width: 500px) {
+    header {
+        display: inline;
+        .logo {
+            display: flex;
+            justify-content: center;
+            // border-bottom: 2px solid gray;
+            box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
+        }
+        img{
+            padding: 25px 0px 10px 0px;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 65px 15px 15px;
+        width: 100%;
+        background: #eaeaea;
+        z-index: -1;
+        i{
+            padding: 10px;
+            font-size: 1rem;
+            margin-right: 10px;
+
+        }  
+        p{
+            font-size: 17px;
+            font-weight: bold;
+            font-family: $textFF;
+            
+        }
+    }
+    .explore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background: $lightgrey;
+        h2{
+            padding: 2rem;
+            font-family: $textFF;
+            font-weight: bold 700;
+        }
+        p{
+            text-align: center;
+            font-family: $textFF;
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 0px 35px 0px 35px;
+        }
+        // need to fix box shadow for only half the button
+        // need to fix global import and have it only be for the button class
+    }
+    .tutorial{
+        padding: 40px 20px 40px 30px;
+        font-family: $textFF;
+        justify-content: space-between;
+        h2{
+            font-size: 22px; 
+            margin-bottom: 25px;
+        }
+    }
+    .steps{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem;
+        padding: 25px 25px 25px 0px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 9px 3px rgba(0,0,0,0.13);
+        margin-bottom: 25px;
+        background: $lightgrey;
+        h5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            float: left;
+            right: 13px;
+            z-index: 1;
+            background: $primaryColor;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            color: #fff;
+        }
+        i{
+            color: $iconColor;
+            font-size: 20px;
+            padding: 0px 25px 0px 10px;
+        }
+        p{
+            font-family: $textFF;
+            font-weight: 800;
+        }
     
-}
+        h5::before{
+            content: '';
+            position: relative;
+            display: block;
+        }
+        &:hover, &:focus, &:active{
+            background: #f5edff;
+            i{
+                color: $primaryColor;
+            }
+        }
+    }
+    
+    .resturants{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px;
+        background: $lightgrey;
+        h4{
+            font-size: 22px;
+            font-family: $textFF;
+            font-weight: 900;
+        }
+        .resturant-cards{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+    .resturant-card{
+
+    }
+}   
+         
+        
