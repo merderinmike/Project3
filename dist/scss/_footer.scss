@@ -1,0 +1,33 @@
+@import './variables';
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #353535;
+    color: #fff;
+    padding: 25px;
+    img{
+        width: 30%;
+        padding-bottom: 15px;
+    }
+    ul{
+        list-style: none;
+        text-decoration: none;
+        // align text so icons do not push text to the right
+        li{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            padding-bottom: 10px;
+            i{
+                padding-right: 10px;
+                font-size: 12px;
+            }
+            h6{
+                font-size: 17px;
+                font-family: $textFF;
+                font-weight: 300;
+            }
+        }
+    }
+}
