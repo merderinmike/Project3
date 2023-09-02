@@ -1,4 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-}
+@import './resets';
+@import './variables';
+@import './orderButton.scss';
+@import './footer';

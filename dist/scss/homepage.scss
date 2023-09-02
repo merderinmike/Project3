@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');
 @import './resets';
 @import './orderButton';
 @import './footer';
@@ -17,6 +16,7 @@ html, body {
             box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.2);
         }
         img{
+            width: 90%;
             padding: 25px 0px 10px 0px;
         }
     }
@@ -65,8 +65,9 @@ html, body {
             font-weight: 300;
             padding: 0px 35px 0px 35px;
         }
-        // need to fix box shadow for only half the button
-        // need to fix global import and have it only be for the button class
+        // TODO - need to fix box shadow for only half the button
+        //TODO - need to fix global import and have it only be for the button class
+
     }
     .tutorial{
         padding: 40px 20px 40px 30px;
@@ -151,7 +152,7 @@ html, body {
         border-radius: 15px;
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
         img{
-            // Add the "new" badge to the first two resturant images
+            //TODO- Add the "new" badge to the first two resturant images
             height: auto;
             width: 100%;
             aspect-ratio: 16/9;
@@ -161,7 +162,7 @@ html, body {
         }
     }
     .resturant-info{ 
-        // need to fix icon/button being on the far right side of the card
+        //TODO- need to fix icon/button being on the far right side of the card
         display: flex;
         flex-direction: column;
         padding: 15px;
@@ -175,7 +176,10 @@ html, body {
             font-family: $textFF;
             font-weight: 400;
         }
-        // Icon border with color of white, on hover/active/focus gradient
+        //TODO- Icon border with color of white, on hover/active/focus gradient
+        i{
+            float: right
+        }
     }
 }   
          
