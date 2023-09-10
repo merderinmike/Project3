@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>ohmyfood!</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./dist/css/enchanted.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
@@ -15,10 +15,10 @@
 	<body>
 		<header>
 			<div class="logo">
-				<button class="return">
-					<i class="fa-solid fa-arrow-left"></i>
-				</button>
-				<a href="homepage.html">
+				<a class="return" href="homepage.html"
+					><i class="fa-solid fa-arrow-left"></i
+				></a>
+				<a class="oh-my-food" href="homepage.html">
 					<img
 						src="./images/logo/ohmyfood@2x.svg"
 						alt="ohmyfood logo"
@@ -28,103 +28,95 @@
 		</header>
 		<div class="img-banner">
 			<img
-				src=""
+				src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
 				alt="The Enchanted Plate menu items plated and on a table"
 			/>
 		</div>
 		<main>
-			<h1>The Enchanted Plate</h1>
-			<i class="fa-regular fa-heart"></i>
-			<section class="entrees">
+			<div class="menu-head">
+				<h1>The Enchanted Plate</h1>
+				<i class="fa-regular fa-heart"><button></button></i>
+			</div>
+			<section class="dishes">
 				<h3>ENTREES</h3>
-				<div class="entree-item">
+				<div class="dish-item" id="entrees">
 					<h5>Foie Gras Ravioli</h5>
-					<h6>With truffle cream</h6>
-					<h6>25€</h6>
-					<div class="add-item">
+					<p>With truffle cream<span>25€</span></p>
+					<button class="add-item">
 						<i class="fa-solid fa-check"></i>
-					</div>
+					</button>
 				</div>
-				<div class="entree-item">
+				<div class="dish-item">
 					<h5>Oscietra Caviar</h5>
-					<h6>With buckwheat blinis</h6>
-					<h6>35€</h6>
-					<div class="add-item">
+					<p>With buckwheat blinis<span>35€</span></p>
+					<button class="add-item">
 						<i class="fa-solid fa-check"></i>
-					</div>
+					</button>
 				</div>
-				<div class="entree-item">
+				<div class="dish-item">
 					<h5>Lobster and Leek Foam</h5>
-					<h6>Marinated with orange zest</h6>
-					<h6>20€</h6>
-					<div class="add-item">
+					<p>Marinated with orange zest<span>20€</span></p>
+					<button class="add-item">
 						<i class="fa-solid fa-check"></i>
-					</div>
+					</button>
 				</div>
-				<div class="entree-item">
+				<div class="dish-item">
 					<h5>Duck Foie Gras</h5>
-					<h6>With fig jam and grilled baguette</h6>
-					<h6>35€</h6>
-					<div class="add-item">
+					<p>With fig jam and grilled baguette<span>35€</span></p>
+					<button class="add-item">
 						<i class="fa-solid fa-check"></i>
-					</div>
+					</button>
 				</div>
 			</section>
-			<section class="main-dish">
+			<section class="dishes" id="mainDish">
 				<h3>MAIN DISH</h3>
-				<div class="main-dish-item">
+				<div class="dish-item">
 					<h5>Fresh Buttered Scallops</h5>
-					<h6>With white celery puree</h6>
-					<h6>40€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With white celery puree<span>40€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="main-dish-item">
+				<div class="dish-item">
 					<h5>Pna-Fried Lobster</h5>
-					<h6>With mashed sweet potatoes</h6>
-					<h6>35€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With mashed sweet potatoes<span>35€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="main-dish-item">
+				<div class="dish-item">
 					<h5>Braised Ox Tail</h5>
-					<h6>With wild rice and lemon zest</h6>
-					<h6>44€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With wild rice and lemon zest<span>44€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
 			</section>
-			<section class="desserts">
+			<section class="dishes" id="desserts">
 				<h3>DESSERTS</h3>
-				<div class="desserts-item">
+				<div class="dish-item">
 					<h5>Chocolate and Hazelnut Macaroon</h5>
-					<h6>With caramel butter ice cream</h6>
-					<h6>18€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With caramel butter ice cream<span>18€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="desserts-item">
+				<div class="dish-item">
 					<h5>Baba au rhum</h5>
-					<h6>With lemon drizzle</h6>
-					<h6>22€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With lemon drizzle<span>22€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="desserts-item">
+				<div class="dish-item">
 					<h5>Lemon Meringue Pie</h5>
-					<h6>Destructed</h6>
-					<h6>23€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>Destructed<span>23€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
 			</section>
-			<button class="order">Order</button>
+			<button class="order-btn">Order</button>
 		</main>
 		<footer>
 			<img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood logo" />

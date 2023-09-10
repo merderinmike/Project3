@@ -1,0 +1,79 @@
+@import './resets';
+@import './variables';
+@import './header';
+@import './dishItem';
+@import './orderButton';
+@import './footer';
+@media  screen and (max-width: 500px){
+    .img-banner{
+        display: flex;
+        img{
+            height: auto;
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            object-position: 35% 35%;
+            //TODO- need to figure out best way to set the banner img behind the main section to add the border radius 
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px 0px 15px;
+        gap: 25px;
+        border-radius: 30px 30px 0px 0px;
+        background: $darkgrey;
+        position: relative;
+        margin-top: -30px;
+        .menu-head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding: 25px 20px 10px 0px;
+            h1{
+                font-family: $titleFF;
+                font-size: 25px;
+                font-weight: 500;
+                width: 60%;
+            }
+            i{
+                // TODO- Need to have the button be within the icon so when hover
+                // or clicked the heart icon takes the background gradient
+                // toggle button maybe?
+                font-size: 25px;
+                padding-top: 5px;
+                &:hover, &:focus, &:active{
+                    &::before {
+                        background: linear-gradient(175deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 76%);
+                        // Play with bg-clip etc. to try to get gradient on unicode symbol.
+                        background-clip: text;
+                        // TODO: actual color
+                        color: purple;
+                        // font-weight is how font-awesome distinguishes outline from filled
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+        .dishes{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 15px;
+            h3{
+                font-family: $textFF;
+                font-size: 13px;
+                font-weight: 500;
+                padding-bottom: 3px;
+                width: 10%;
+                border-bottom: 2px solid $tertiaryColor;
+                white-space: nowrap;
+                
+            }
+        }     
+    }
+}
