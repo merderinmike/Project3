@@ -39,19 +39,15 @@
                 font-weight: 500;
                 width: 60%;
             }
-            i{
-                // TODO- Need to have the button be within the icon so when hover
-                // or clicked the heart icon takes the background gradient
-                // toggle button maybe?
+            .fa-heart {
                 font-size: 25px;
                 padding-top: 5px;
                 &:hover, &:focus, &:active{
+                    
                     &::before {
-                        background: linear-gradient(175deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 76%);
-                        // Play with bg-clip etc. to try to get gradient on unicode symbol.
+                        background-image: linear-gradient(175deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 76%);
                         background-clip: text;
-                        // TODO: actual color
-                        color: purple;
+                        color: transparent;
                         // font-weight is how font-awesome distinguishes outline from filled
                         font-weight: 900;
                     }

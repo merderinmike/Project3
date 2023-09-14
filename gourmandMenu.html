@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>ohmyfood!</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./dist/css/gourmand.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
@@ -15,10 +15,10 @@
 	<body>
 		<header>
 			<div class="logo">
-				<button class="return">
-					<i class="fa-solid fa-arrow-left"></i>
-				</button>
-				<a href="homepage.html">
+				<a class="return" href="homepage.html"
+					><i class="fa-solid fa-arrow-left"></i
+				></a>
+				<a class="oh-my-food" href="homepage.html">
 					<img
 						src="./images/logo/ohmyfood@2x.svg"
 						alt="ohmyfood logo"
@@ -30,90 +30,83 @@
 			<img src="" alt="Le Gourmand menu items plated and on a table." />
 		</div>
 		<main>
-			<h1>Le Gourmand</h1>
-			<i class="fa-regular fa-heart"></i>
-			<section class="entrees">
+			<div class="menu-head">
+				<h1>Le Gourmand</h1>
+				<i class="fa-regular fa-heart"><button></button></i>
+			</div>
+			<section class="dishes" id="entrees">
 				<h3>ENTREES</h3>
-				<div class="entree-item">
+				<div class="dish-item">
 					<h5>Tuna Carpaccio</h5>
-					<h6>Seasoned with yuzu</h6>
-					<h6>25€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>Seasoned with yuzu<span>25€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="entree-item">
+				<div class="dish-item">
 					<h5>Crunchy Lobster Croquets</h5>
-					<h6>With seasonal vegetables</h6>
-					<h6>35€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With seasonal vegetables<span>35€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="entree-item">
+				<div class="dish-item">
 					<h5>Mushroom Soup</h5>
-					<h6>With truffles</h6>
-					<h6>20€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With truffles<span>20€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
 			</section>
-			<section class="main-dish">
+			<section class="dishes" id="mainDish">
 				<h3>MAIN DISH</h3>
-				<div class="main-dish-item">
+				<div class="dish-item">
 					<h5>Roasted Chicken with Provincal Herbs</h5>
-					<h6>With truffle cream</h6>
-					<h6>40€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With truffle cream<span>40€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="main-dish-item">
+				<div class="dish-item">
 					<h5>Roasted Lobster</h5>
-					<h6>With seasonal vegetables</h6>
-					<h6>35€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With seasonal vegetables<span>35€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="main-dish-item">
+				<div class="dish-item">
 					<h5>Agnus Beef Ribs</h5>
-					<h6>With mashed parsnips</h6>
-					<h6>44€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With mashed parsnips<span>44€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
 			</section>
-			<section class="desserts">
+			<section class="dishes" id="desserts">
 				<h3>DESSERTS</h3>
-				<div class="desserts-item">
+				<div class="dish-item">
 					<h5>Assorted Dessert Plate</h5>
-					<h6>Chef's choice</h6>
-					<h6>18€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>Chef's choice<span>18€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="desserts-item">
+				<div class="dish-item">
 					<h5>Crème brulèe</h5>
-					<h6>Revisited</h6>
-					<h6>22€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>Revisited<span>22€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
-				<div class="desserts-item">
+				<div class="dish-item">
 					<h5>Tiramisu</h5>
-					<h6>With hazelnuts</h6>
-					<h6>23€</h6>
-					<div class="add-item">
-						<i class="fa-solid fa-check">Check</i>
-					</div>
+					<p>With hazelnuts<span>23€</span></p>
+					<button class="add-item">
+						<i class="fa-solid fa-check"></i>
+					</button>
 				</div>
 			</section>
-			<button class="order">Order</button>
+			<button class="order-btn">Order</button>
 		</main>
 		<footer>
 			<img src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood logo" />
