@@ -8,16 +8,17 @@ footer{
     img{
         width: 30%;
         padding-bottom: 15px;
+
     }
     ul{
         list-style: none;
         text-decoration: none;
         // align text so icons do not push text to the right
         li{
-            display: flex;
-            justify-content: flex-start;
+            display: grid;
+            justify-content: start;
             align-items: center;
-            flex-direction: row;
+            grid-template-columns: 25px 1fr;
             padding-bottom: 10px;
             i{
                 padding-right: 10px;

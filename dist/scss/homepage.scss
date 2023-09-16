@@ -155,7 +155,6 @@ html, body {
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
         position: relative;
         img{
-            //TODO- Add the "new" badge to the first two resturant images
             height: auto;
             width: 100%;
             aspect-ratio: 16/9;
@@ -177,7 +176,6 @@ html, body {
             }
     }
     .resturant-info{ 
-        //TODO- need to fix icon/button being on the far right side of the card
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-rows: repeat(2, auto);
@@ -197,7 +195,6 @@ html, body {
             font-weight: 400;
             padding-top: 25px;
         }
-        //TODO- Icon border with color of white, on hover/active/focus gradient
         .fa-heart{
             grid-row: 1;
             padding: 5px 10px 0px 0px;
