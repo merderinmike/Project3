@@ -214,4 +214,191 @@ html, body {
     }
 }   
          
-        
+@media screen and (min-width: 992px) {
+    header {
+        display: inline;
+        padding: 0;
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            width: 100%;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        .location{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: $lightgrey;
+            i{
+                padding-right: 10px;
+            }
+        }
+        .explore{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-color: $darkgrey;
+            h2{
+                font-family: $textFF;
+                padding-bottom: 10px;
+            }
+            p{
+                font-family: $textFF;
+            }
+            button{
+                width: 30%;
+            }
+        }
+        .tutorial{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            h2{
+                padding-bottom: 20px;
+            }
+            .steps{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                width: 50%;
+                font-size: 1rem;
+                padding: 25px 25px 25px 0px;
+                border-radius: 20px;
+                box-shadow: 0px 4px 9px 3px rgba(0,0,0,0.13);
+                margin-bottom: 25px;
+                background: $lightgrey;
+                h5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    float: left;
+                    right: 13px;
+                    z-index: 1;
+                    background: $primaryColor;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px;
+                    color: #fff;
+                }
+                i{
+                    color: $iconColor;
+                    font-size: 20px;
+                    padding: 0px 25px 0px 10px;
+                }
+                p{
+                    font-family: $textFF;
+                    font-weight: 800;
+                }
+            
+                h5::before{
+                    content: '';
+                    position: relative;
+                    display: block;
+                }
+                &:hover, &:focus, &:active{
+                    background: #f5edff;
+                    i{
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+        .resturants{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4{
+                font-family: $textFF;
+                font-size: 25px;
+                padding-bottom: 25px;
+            }
+        }
+        .resturant-cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding-bottom: 25px;
+        }  
+        .resturant-card{
+            width: 50%;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+            position: relative;
+            img{
+                height: auto;
+                width: 100%;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                object-position: 50% 90%;
+                border-radius: 15px 15px 0px 0px;
+            }
+            span{
+                    position: absolute;
+                    background: $green;
+                    opacity: 0.97;
+                    padding: 7px 30px;
+                    border-radius: 2px;
+                    font-family: $textFF;
+                    color: #008766;
+                    font-weight: 900;
+                    top: 15px;
+                    right: 10px;
+                }
+        }
+        .resturant-info{ 
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: repeat(2, auto);
+            padding: 15px;
+            h5{
+                grid-row: 1;
+                grid-column: 1;
+                font-size: 17px;
+                font-family: $textFF;
+                font-weight: 900;
+            }
+            h6{
+                grid-row: 1;
+                grid-column: 1;
+                font-size: 15px;
+                font-family: $textFF;
+                font-weight: 400;
+                padding-top: 25px;
+            }
+            .fa-heart{
+                grid-row: 1;
+                padding: 5px 10px 0px 0px;
+                font-size: 25px;
+                &:hover, &:focus, &:active{
+                        
+                    &::before {
+                        background-image: linear-gradient(175deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 76%);
+                        background-clip: text;
+                        color: transparent;
+                        // font-weight is how font-awesome distinguishes outline from filled
+                        font-weight: 900;
+                    }
+                }
+                
+            }
+        }
+    }
+}       
