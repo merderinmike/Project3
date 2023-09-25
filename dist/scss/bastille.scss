@@ -73,3 +73,10 @@
         }     
     }
 }
+
+// Animation loop in pseudo-code
+// for 1 to {num of .dish-item divs on page}
+//
+// .dish-item::nth-of-type({index}) {
+//   animation: fade-up-and-in 300ms {300 x {index}}ms ease-in;
+// }

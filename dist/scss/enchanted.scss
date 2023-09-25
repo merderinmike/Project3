@@ -4,6 +4,7 @@
 @import './dishItem';
 @import './orderButton';
 @import './footer';
+$dishItemCount: 10;
 @media  screen and (max-width: 500px){
     .img-banner{
         display: flex;
@@ -13,7 +14,6 @@
             aspect-ratio: 16/9;
             object-fit: cover;
             object-position: 35% 35%;
-            //TODO- need to figure out best way to set the banner img behind the main section to add the border radius 
         }
     }
     main{

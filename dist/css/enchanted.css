@@ -44,7 +44,7 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .dish-item {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -52,13 +52,19 @@
     width: 100%;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0px 2px 5px 2px rgba;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.2s, transform 0.2s;
+    animation: fadeInCascade 0.2s ease-in-out forwards;
   }
   .dish-item .max-width {
     width: 100%;
   }
   .dish-item .dish-item-text-wrapper {
+    grid-column: 1/span 1;
     padding: 10px;
   }
   .dish-item h5 {
@@ -66,22 +72,23 @@
     font-size: 18px;
     font-weight: 600;
     width: 60%;
-    grid-column: 1;
-    grid-row: 1;
+    text-wrap: nowrap;
   }
   .dish-item p {
-    grid-column: 1;
-    grid-row: 2;
     height: auto;
-    width: 100%;
+    width: auto;
     font-family: Roboto;
     font-size: 15px;
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
-    white-space: nowrap;
   }
-  .dish-item p span {
+  .dish-item p .description-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .dish-item p .description-price {
     font-weight: bold;
     padding-right: 10px;
   }
@@ -96,9 +103,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    grid-column: 2;
+    grid-column: 2/-1;
     opacity: 0;
-    transition: width 0.3s, opacity 0.3s;
+    position: relative;
+    right: -50px;
+    transition: right 0.3s, opacity 0.3s;
   }
   .dish-item button i {
     display: flex;
@@ -111,22 +120,72 @@
     border-radius: 10px;
     font-size: 10px;
   }
+  .dish-item:hover, .dish-item:active, .dish-item:focus, .dish-item:focus-visible, .dish-item:focus-within {
+    grid-template-columns: calc(100% - 50px) 50px;
+  }
   .dish-item:hover button, .dish-item:active button, .dish-item:focus button, .dish-item:focus-visible button, .dish-item:focus-within button {
     width: 50px;
+    right: 0;
     opacity: 1;
   }
   .dish-item:hover button i, .dish-item:active button i, .dish-item:focus button i, .dish-item:focus-visible button i, .dish-item:focus-within button i {
-    animation: spin 0.3s linear;
+    animation: spin 0.3s 0.3s linear;
   }
   @keyframes spin {
     0% {
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(306deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fadeInCascade {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
+.dish-item:nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.dish-item:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.dish-item:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+.dish-item:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+
+.dish-item:nth-of-type(5) {
+  animation-delay: 1s;
+}
+
+.dish-item:nth-of-type(6) {
+  animation-delay: 1.2s;
+}
+
+.dish-item:nth-of-type(7) {
+  animation-delay: 1.4s;
+}
+
+.dish-item:nth-of-type(8) {
+  animation-delay: 1.6s;
+}
+
+.dish-item:nth-of-type(9) {
+  animation-delay: 1.8s;
+}
+
 .order-btn {
   margin: 30px 0px 50px 0px;
   padding: 15px;
@@ -173,6 +232,11 @@ footer ul li h6 {
   font-weight: 300;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    width: 15%;
+  }
+}
 @media screen and (max-width: 500px) {
   .img-banner {
     display: flex;
