@@ -73,3 +73,67 @@ $dishItemCount: 10;
         }     
     }
 }
+@media screen and (min-width: 768px){
+    *{
+        font-family: $textFF;
+    }
+    .img-banner{
+        display: flex;
+        img{
+            height: auto;
+            width: 100%;
+            aspect-ratio: 12/6;
+            object-fit: cover;
+        }
+    }
+    main{
+        position: relative;
+        margin-top: -30px;
+        border-radius: 30px 30px 0px 0px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background: $darkgrey;
+        .menu-head{
+            padding: 10px 10px 0px 10px;
+            width: 100%;
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            h1{
+                font-size: 30px;
+            }
+            .fa-heart {
+                font-size: 25px;
+                padding-top: 5px;
+                &:hover, &:focus, &:active{
+                    
+                    &::before {
+                        background-image: linear-gradient(175deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 76%);
+                        background-clip: text;
+                        color: transparent;
+                        // font-weight is how font-awesome distinguishes outline from filled
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+        .dishes{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px 0;
+            gap: 20px;
+            h3{
+                width: 6%;
+                border-bottom: 2px solid $tertiaryColor;
+                white-space: nowrap;
+            }
+        }
+        .order-btn{
+            width: 30%;
+        }
+    }
+}

@@ -257,7 +257,7 @@ html, body {
     font-weight: 900;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   header {
     display: inline;
     padding: 0;

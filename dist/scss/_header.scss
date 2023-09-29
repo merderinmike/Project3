@@ -36,3 +36,19 @@
     
     }
 }
+@media screen and (min-width: 768px) {
+    header{
+        display: inline;
+        padding: 0px;
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding:10px 20px 0px 20px;
+        }
+        .oh-my-food{
+            padding-right: 40%;
+        }
+    }
+}
